@@ -322,7 +322,7 @@ img {
 }
 
 .home__blob {
-    width: 200px;
+    width: 300px;
     fill: var(--first-color);
 }
 
@@ -332,7 +332,7 @@ img {
 }
 
 .home__data {
-    grid-column: 1/3;
+    grid-column: 1/4;
 }
 
 .home__title {
@@ -493,7 +493,7 @@ button[type="submit"] {
 
 
 .skills__container {
-    max-width: 800px;
+    max-width: 800px !important;
     row-gap: 0;
 }
 
@@ -559,36 +559,43 @@ button[type="submit"] {
     background-color: var(--first-color);
 }
 
-.skills__html {
-    width: 33%;
+.skills__dart {
+    width: 52%;
 }
 
-.skills__css {
-    width: 45%;
+.skills__CS {
+    width: 70%;
 }
 
-.skills__js {
-    width: 30%;
+.skills__Java {
+    width: 59%;
 }
 
-.skills__flutter {
+.skills__php {
+    width: 70%;
+}
+
+.skills__tailwind {
     width: 60%;
 }
 
-.skills__figma {
-    width: 90%;
+.skills__bootsrap {
+    width: 70%;
 }
 
-.skills__xd {
+.skills__unity {
     width: 80%;
+}
+.skills__blender {
+    width: 50%;
 }
 
 .skills__cd {
     width: 90%;
 }
 
-.skills__ai {
-    width: 60%;
+.skills__ps {
+    width: 70%;
 }
 
 .skills__close .skills__list {
@@ -946,11 +953,19 @@ button[type="submit"] {
     .nav__list {
         column-gap: 0;
     }
+    .home__description {
+        text-align: justify;
+        margin-right: 0.5rem;
+    }
     .home__content {
         grid-template-columns: .3fr 3fr;
+        gap: 0;
     }
     .home__blob {
-        width: 180px;
+        width: 280px;
+    }
+    .home__img{
+        grid-column-start: 1;
     }
     .qualification__data {
         gap: .5rem;
@@ -960,6 +975,11 @@ button[type="submit"] {
     }
 }
 
+@media screen and (min-width: 350px){
+    .home__blob {
+        width: 280px;
+    }
+}
 
 /* For medium devices */
 
@@ -969,6 +989,10 @@ button[type="submit"] {
     }
     .home__data {
         grid-column: initial;
+
+    }
+    .home__blob {
+        width: 280px;
     }
     .home__img {
         order: 1;
@@ -990,6 +1014,7 @@ button[type="submit"] {
 
 @media screen and (min-width: 768px) {
     .container {
+        max-width: 900px;
         margin-left: auto;
         margin-right: auto;
     }
@@ -1115,9 +1140,12 @@ button[type="submit"] {
     .main,
     .footer__container {
         padding: 0;
+    }.container{
+        max-width: 900px;
     }
+
     .home__blob {
-        width: 500px;
+        width: 400px;
     }
     /* .home__social {
         transform: translateX(-6rem);
@@ -1143,4 +1171,10 @@ button[type="submit"] {
     .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .container{
+        max-width: 1300px;
+    } 
 }
