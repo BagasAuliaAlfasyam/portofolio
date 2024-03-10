@@ -590,6 +590,10 @@ button[type="submit"] {
     width: 50%;
 }
 
+.skills__fg {
+    width: 60%;
+}
+
 .skills__cd {
     width: 90%;
 }
@@ -1039,6 +1043,9 @@ button[type="submit"] {
     .home__blob {
         width: 280px;
     }
+    .project__img {
+        width: 200px;
+    }
 }
 
 /* For medium devices */
@@ -1069,6 +1076,9 @@ button[type="submit"] {
         display: grid;
         grid-template-columns: .6fr;
         justify-content: center;
+    }
+    .project__img {
+        width: 200px;
     }
 }
 
@@ -1168,11 +1178,14 @@ button[type="submit"] {
         background-color: var(--first-color-second);
         border-radius: 1rem;
         padding: 3rem 3.5rem 0;
-        grid-template-columns: 1fr max-content;
+        grid-template-columns: 1fr 1fr;
         column-gap: 3rem;
     }
     .project__data {
         padding-top: .8rem;
+    }
+    .project__img {
+        width: 200px;
     }
     .footer__container {
         grid-template-columns: repeat(3, 1fr);
