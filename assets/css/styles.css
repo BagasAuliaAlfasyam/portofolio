@@ -763,9 +763,11 @@ button[type="submit"] {
 }
 
 .portofolio_project__img {
-    width: 265px;
+    width: 800px;
     border-radius: .5rem;
     justify-self: center;
+    aspect-ratio: 16/8;
+    object-fit: contain;
 }
 
 .portofolio_project__title {
