@@ -149,6 +149,11 @@ img {
 
 /*==================== REUSABLE CSS CLASSES ====================*/
 
+.btn-end{
+    display: flex;
+    justify-content: center;
+}
+
 .section {
     padding: 2rem 0 4rem;
 }
@@ -710,6 +715,11 @@ button[type="submit"] {
 .portofolio__title {
     font-size: var(--h3-font-size);
     margin-bottom: var(--mb-0-5);
+}
+
+.projectt__title {
+    font-size: var(--h3-font-size);
+    text-align: center;
 }
 
 .portofolio__description {
